@@ -1,0 +1,16 @@
+{
+   "projects": [
+    {
+        "id":1,
+        "title":"creat new list",
+        "details":"creat me now",
+        "complete":false
+    },
+      {
+        "id":2,
+        "title":"manage your rome",
+        "details":"manage me now",
+        "complete":true
+    }
+   ]
+}
