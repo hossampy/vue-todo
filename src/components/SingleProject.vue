@@ -1,9 +1,9 @@
 <template>
-  <div class="project">
+  <div class="project" :class="{complete : proj.complete==true}">
     <div class="action">
       <h3 @click="toggleDetails">{{proj.title}}</h3>
       <div class="icons">
-        <span class="material-icons done">done</span>
+        <span @click="toggledone" class="material-icons done">done</span>
         <span class="material-icons edit">edit</span>
         <span @click="deleteProject" class="material-icons delete">delete</span>
       </div>
@@ -39,8 +39,33 @@ export default {
       } catch (error) {
         console.error('Error deleting project:', error);
       }
-    }
-  }
+    } ,
+     async toggledone() {
+        try{  const response = await fetch(this.baseUri +this.proj.id,{
+            method:'PATCH',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify({
+                complete : !this.proj.complete
+            })
+
+             });
+              if (response.ok) {
+                this.proj.complete = !this.proj.complete; 
+                this.$emit('complete', this.proj.id); 
+              }else {
+                 console.error('Failed to update completion status:', response.statusText);
+            }}
+       
+            catch (error) {
+              console.error('Error updating completion status:', error);
+                     }
+
+     }
+    
+}
+  
 }
 </script>
 
@@ -51,7 +76,7 @@ export default {
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
-    border-left: 4px solid #e75af1;
+    border-left: 4px solid #f52d2d;
 }
 h3{
     cursor: pointer;
@@ -73,5 +98,10 @@ h3{
 }
 .material-icons.edit:hover{
     color: rgb(224, 48, 255);
+}
+.complete{
+    border-left: 4px solid #5af173;
+    text-decoration: line-through;
+    opacity: 50%;
 }
 </style>

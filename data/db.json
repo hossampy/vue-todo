@@ -10,7 +10,7 @@
       "id": "3",
       "title": "creat new list",
       "details": "creat me now",
-      "complete": false
+      "complete": true
     },
     {
       "id": "4",
@@ -22,7 +22,7 @@
       "id": "5",
       "title": "manage your git",
       "details": "manage me now",
-      "complete": true
+      "complete": false
     }
   ]
 }

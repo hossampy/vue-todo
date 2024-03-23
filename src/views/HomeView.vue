@@ -2,7 +2,7 @@
   <div class="home">
   <div v-if="projects.length">
     <div v-for="project in projects" :key="project.id">
-    <SingleProject :proj ="project" @deleted="handeldeleted"/>
+    <SingleProject :proj ="project" @deleted="handeldeleted" />
     </div>
   </div>
   </div>
@@ -34,7 +34,8 @@ export default {
       this.projects =  this.projects.filter((project)=>{
         return project.id !==id
       })
-    }
+    },
+    
   }
 }
 </script>
