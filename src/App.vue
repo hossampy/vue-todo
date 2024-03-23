@@ -5,7 +5,7 @@
 
 <style>
 body {
-background-color: rgba(146, 103, 220, 0.808);
+background-color: rgb(242, 243, 241);
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
