@@ -17,9 +17,35 @@ export default {
         }
     },
     methods:{
-        addproject(){
-            console.log(this.title)
+     async   addproject(){
+          try{
+             let project = {
+            title : this.title,
+            details : this.Details,
+            complete : false
+           };
+        const response =await fetch('http://localhost:3000/projects/',{
+            method:'POST',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+             body: JSON.stringify(project)
+           })
+           if(response.ok){
+            this.title="";
+            this.Details="";
+            this.$emit('project-added');
+            this.$router.push('/')
+           }
+           else{
+            console.error('Failed to add project:', response.statusText);
+           }
+          }
+           catch (error) {
+        console.error('Error adding project:', error);
         }
+        }
+
     }
 
 }
