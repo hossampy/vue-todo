@@ -7,10 +7,14 @@
       "complete": true
     },
     {
-      "id": "4",
-      "title": "manage your rome",
-      "details": "manage me now",
-      "complete": true
+      "title": "manage your roome",
+      "details": "manage me rome",
+      "id": "4"
+    },
+    {
+      "title": "learn vue ",
+      "details": "learn vue and nuxt js and doker",
+      "id": "b8e4"
     }
   ]
 }
