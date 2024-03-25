@@ -2,7 +2,7 @@
     <nav class="filter">
         <button @click="updatefilter('all')" :class="{ active: currnet==='all' }"> view all</button>
         <button @click="updatefilter('completed')" :class="{ active: currnet === 'completed' }"> completed</button>
-        <button @click="updatefilter('ongoing')" :class="{ active: currnet === 'ongoing ' }"> ongoing </button>
+        <button @click="updatefilter('ongoing')" :class="{ active: currnet === 'ongoing' }">ongoing</button>
 
     </nav>
 </template>
@@ -41,6 +41,6 @@ export default {
 }
 
 button.active {
-    color: #5ff787;
+    color: #288b42;
 }
 </style>

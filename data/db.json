@@ -4,13 +4,13 @@
       "id": "3",
       "title": "creat new list",
       "details": "creat me now",
-      "complete": true
+      "complete": false
     },
     {
       "title": "manage your roome ? WG",
       "details": "manage me rome AND WG",
       "id": "4",
-      "complete": true
+      "complete": false
     },
     {
       "title": "learn vue ",

@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <Filternav :currnet="currnet"  @filterchange="currnet=$event" />
+    <Filternav :currnet="currnet" @filterchange="currnet=$event" />
     <div v-if="projects.length">
-      <div v-for="project in projects" :key="project.id">
+      <div v-for="project in filterproject" :key="project.id">
         <SingleProject :proj="project" @deleted="handeldeleted" />
       </div>
     </div>
@@ -39,6 +39,20 @@ export default {
       })
     },
     
+  },
+  computed:{
+    filterproject(){
+      if (this.currnet ==='completed'){
+        return this.projects.filter(project => project.complete) 
+
+      } else if (this.currnet === 'ongoing'){
+        return this.projects.filter(project => project.complete === false) 
+      }
+      else{
+        return this.projects
+      }
+
+    }
   }
 }
 </script>
