@@ -64,7 +64,7 @@ export default {
 
 <style>
 form{
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
     border-radius: 10px;

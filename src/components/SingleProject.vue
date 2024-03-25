@@ -74,7 +74,7 @@ export default {
 <style>
 .project{
     margin: 20px auto;
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);

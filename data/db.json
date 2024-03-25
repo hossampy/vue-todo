@@ -4,7 +4,7 @@
       "id": "3",
       "title": "creat new list",
       "details": "creat me now",
-      "complete": false
+      "complete": true
     },
     {
       "title": "manage your roome ? WG",
@@ -16,7 +16,19 @@
       "title": "learn vue ",
       "details": "learn vue and nuxt js and doker",
       "id": "b8e4",
-      "complete": true
+      "complete": false
+    },
+    {
+      "id": "cc11",
+      "title": "be my self",
+      "details": "be my self",
+      "complete": false
+    },
+    {
+      "id": "2ef8",
+      "title": "ezez",
+      "details": "zeze",
+      "complete": false
     }
   ]
 }

@@ -15,7 +15,8 @@ export default {
 
 <style>
 body {
-  background-color: rgb(242, 243, 241);
+background: rgb(237, 86, 255);
+  background: linear-gradient(90deg, rgba(237, 86, 255, 1) 0%, rgba(75, 212, 255, 1) 100%);
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -23,6 +24,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   max-width: 600px;
   margin: 0 auto;
-  color: #324752;
+  color: #000000;
 }
 </style>

@@ -29,7 +29,7 @@ export default {
     margin-left: 80px;
     background: none;
     border: none;
-    color: #bbb;
+    color: #ffffff;
     outline: none;
     font-size: 12px;
     text-transform: uppercase;
@@ -41,6 +41,6 @@ export default {
 }
 
 button.active {
-    color: #288b42;
+    color: #06ff49;
 }
 </style>

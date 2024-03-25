@@ -53,14 +53,14 @@ export default {
 
 <style>
 form{
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
     border-radius: 10px;
 }
 label{
     display: block;
-    color: #51f588;
+    color: #e1ebe4;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
@@ -86,7 +86,7 @@ textarea{
 form button{
     display: block;
     margin: 20px auto 0;
-    background: #51f588;
+    background: #04a4e9;
     padding: 15px;
     border: 0;
     border-radius: 10px;
