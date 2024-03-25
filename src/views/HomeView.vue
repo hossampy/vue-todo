@@ -1,25 +1,28 @@
 <template>
   <div class="home">
-  <div v-if="projects.length">
-    <div v-for="project in projects" :key="project.id">
-    <SingleProject :proj ="project" @deleted="handeldeleted" />
+    <Filternav :currnet="currnet"  @filterchange="currnet=$event" />
+    <div v-if="projects.length">
+      <div v-for="project in projects" :key="project.id">
+        <SingleProject :proj="project" @deleted="handeldeleted" />
+      </div>
     </div>
-  </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import SingleProject from "../components/SingleProject.vue"
-
+import Filternav from "../components/Filternav.vue"
 export default {
   name: 'HomeView',
   components: {
-   SingleProject
+   SingleProject,
+    Filternav
   },
   data(){
     return{
-      projects:[]
+      projects:[],
+      currnet :'all',
     }
   }
   ,

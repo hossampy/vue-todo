@@ -40,7 +40,7 @@ export default {
 
       try {
         const response = await fetch(this.uri, {
-          method: 'PUT', 
+          method: 'PATCH', 
           headers: {
             'Content-Type': 'application/json'
           },
